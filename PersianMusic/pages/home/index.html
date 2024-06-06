@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="../../style/main style.css">
+    <link rel="stylesheet" href="../../style/music col.css">
+    <link rel="stylesheet" href="../../style/music row.css">
+    <link rel="stylesheet" href="../../style/music video.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="left-side left-side1" id="left-side1">
+        <button class="left-arrow"><i class='bx bx-menu' ></i></button>
+        <p class="logo"><span>P</span>ersianMusic</p>
+        <div class="menu">
+            <p class="menu-top bold">EXPLORE</p>
+            <a href="http://127.0.0.1:5500/pages/home/index.html"><div class="menu-sub">
+                <div class="line"></div>
+                <i class='bx bx-home'></i>
+                <p>Home</p>
+            </div></a>
+            <a href=""><div class="menu-sub">
+                <div class="line"></div> 
+                <i class='bx bx-heart-circle' ></i>
+                <p>Favorites</p>
+            </div></a>
+        </div>
+
+        <div class="menu playlist-menu">
+            <div class="playlist">
+                <p class="menu-top bold">PLAYLIST</p>
+                <button class="add_btn"><i class='bx bx-plus'></i></button>
+            </div>
+            <a href=""><div class="menu-sub playlist-menu-sub">
+                <div class="line"></div> 
+                <i class='bx bx-list-ul' ></i>
+                <p>Pop&nbsp;+&nbsp;Rap</p>
+            </div></a>
+            <a href=""><div class="menu-sub playlist-menu-sub">
+                <div class="line"></div>
+                <i class='bx bx-list-ul' ></i>
+                <p>Classic</p>
+            </div></a>
+            <a href=""><div class="menu-sub playlist-menu-sub">
+                <div class="line"></div>
+                <i class='bx bx-list-ul' ></i>
+                <p>R&B</p>
+            </div></a>
+        </div>
+    </section>
+
+    <section class="left-side left-side2" id="left-side2">
+        <button class="left-arrow"><i class='bx bx-menu' ></i></button>
+        <div class="menu">
+            <a href="http://127.0.0.1:5500/pages/home/index.html"><div class="menu-sub">
+                <i class='bx bx-home'></i>
+                <p>Home</p>
+            </div></a>
+            <a href="http://127.0.0.1:5500/pages/Search/index.html"><div class="menu-sub">
+                <i class='bx bx-search-alt' ></i>
+                <p>Search</p>
+            </div></a>
+            <a href=""><div class="menu-sub"> 
+                <i class='bx bx-heart-circle' ></i>
+                <p>Favorites</p>
+            </div></a>
+            <a href=""><div class="menu-sub playlist-sub"> 
+                <i class='bx bx-headphone'></i>
+                <p>Playlists</p>
+            </div></a>
+        </div>
+    </section>
+
+    <section class="right-side">
+        <header>
+            <div class="up-left-box">
+                <button><i class='bx bx-chevron-left' ></i></button>
+                <button><i class='bx bx-chevron-right'></i></button>
+            </div>
+
+            <div class="up-mid-box">
+                <div class="search">
+                    <button type="submit" class="search-button">
+                        <i class='bx bx-search-alt' ></i>
+                    </button>
+                    <input type="text" class="search-term" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="up-right-box">
+                <button class="mode">
+                    <i id="sun" class='bx bxs-sun'></i>
+                    <i id="moon" class='bx bxs-moon' style="display: none;"></i>
+                </button>
+                <div class="profile-box" id="profile-box">
+                    <div class="profile-img" style="background-image: url(../../images/Profile.png);"></div>
+                    <p class="username">Username</p>
+                    <button class="dropbox-btn">
+                        <i class='bx bx-chevron-down' id="down"></i>
+                        <i class='bx bx-chevron-up' id="up" style="display: none;"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <section class="dropbox" id="profile-dropbox">
+            <a href="">Profile</a>
+            <a href="">Account</a>
+            <a href="">Setting</a>
+            <a href="">Log&nbsp;out</a>
+        </section>
+
+        <section class="right-mid">
+            <div class="row-top">
+                <p class="big2 bold2">Popular Songs</p>
+                <a href="">Show More</a>
+            </div>
+
+            <div class="row">
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img.jpg);"></div>
+                    <p class="bold">The End</p>
+                    <p class="thin little">021kid</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img2.jpg);"></div>
+                    <p class="bold">Hate</p>
+                    <p class="thin little">Chrvsi</p>
+                </a>
+                
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img3.jpg);"></div>
+                    <p class="bold">RunAway</p>
+                    <p class="thin little">Poobon</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img4.jpg);"></div>
+                    <p class="bold">52hz</p>
+                    <p class="thin little">Chrvsi</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img5.jpg);"></div>
+                    <p class="bold">The Cold Room</p>
+                    <p class="thin little">021kid</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img6.jpg);"></div>
+                    <p class="bold">Shootia</p>
+                    <p class="thin little">Poori</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img7.jpg);"></div>
+                    <p class="bold">Nakhla</p>
+                    <p class="thin little">Hidden & Khalse</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img8.jpg);"></div>
+                    <p class="bold">Gizeh</p>
+                    <p class="thin little">Hipopologist</p>
+                </a>
+            </div>
+            
+            <div class="row row-scroll">
+                <div class="half">
+                    <div class="row-top">
+                        <p class="big2 bold2">Recently Listened</p>
+                        <a href="">Show More</a>
+                    </div>
+
+                    <div class="music-list">
+                        <a href="" class="music-row-box">
+                            <div class="music-detail">
+                                <div class="music-img" style="background-image: url(../../images/music-img.jpg);"></div>
+                                <p>The End</p>
+                            </div>
+                            <p>00:00</p>
+                        </a>
+
+                        <a href="" class="music-row-box">
+                            <div class="music-detail">
+                                <div class="music-img" style="background-image: url(../../images/music-img2.jpg);"></div>
+                                <p>Hate</p>
+                            </div>
+                            <p>00:00</p>
+                        </a>
+
+                        <a href="" class="music-row-box">
+                            <div class="music-detail">
+                                <div class="music-img" style="background-image: url(../../images/music-img3.jpg);"></div>
+                                <p>RunAway</p>
+                            </div>
+                            <p>00:00</p>
+                        </a>
+
+                        <a href="" class="music-row-box">
+                            <div class="music-detail">
+                                <div class="music-img" style="background-image: url(../../images/music-img4.jpg);"></div>
+                                <p>52hz</p>
+                            </div>
+                            <p>00:00</p>
+                        </a>
+
+                        <a href="" class="music-row-box">
+                            <div class="music-detail">
+                                <div class="music-img" style="background-image: url(../../images/music-img5.jpg);"></div>
+                                <p>The Cold Room</p>
+                            </div>
+                            <p>00:00</p>
+                        </a>
+
+                        <a href="" class="music-row-box">
+                            <div class="music-detail">
+                                <div class="music-img" style="background-image: url(../../images/music-img6.jpg);"></div>
+                                <p>Shootia</p>
+                            </div>
+                            <p>00:00</p>
+                        </a>
+
+                        <a href="" class="music-row-box">
+                            <div class="music-detail">
+                                <div class="music-img" style="background-image: url(../../images/music-img7.jpg);"></div>
+                                <p>Nakhla</p>
+                            </div>
+                            <p>00:00</p>
+                        </a>
+
+                        <a href="" class="music-row-box">
+                            <div class="music-detail">
+                                <div class="music-img" style="background-image: url(../../images/music-img8.jpg);"></div>
+                                <p>Gizeh</p>
+                            </div>
+                            <p>00:00</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="half">
+                    <div class="row-top">
+                        <p class="big2 bold2">Music Video</p>
+                        <a href="">Show More</a>
+                    </div>
+
+                    <div class="video-list">
+                        <div class="video-box">
+                            <div class="video-img-box">
+                                <img src="../../images/video-img3.JPG" alt="">
+                                <img src="../../images/video-img2.JPG" alt="">
+                                <img src="../../images/video-img.JPG" alt="">
+                                <img src="../../images/video-img4.JPG" alt="">
+                                <img src="../../images/video-img5.JPG" alt="">
+                            </div>
+                            
+                            <button class="btn-prev"><i class='bx bx-left-arrow-alt'></i> </button>
+                            <button class="btn-next"><i class='bx bx-right-arrow-alt' ></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-top">
+                <p class="big2 bold2">Popular Artists</p>
+                <a href="">Show More</a>
+            </div>
+            <div class="row">
+                <a href="" class="music-box artist">
+                    <div class="music-img border" style="background-image: url(../../images/artist1.jpg);"></div>
+                    <p class="bold">021kid</p>
+                    <p class="thin little">Artist</p>
+                </a>
+
+                <a href="" class="music-box artist">
+                    <div class="music-img border" style="background-image: url(../../images/artist2.jpg);"></div>
+                    <p class="bold">Mehrad Hidden</p>
+                    <p class="thin little">Artist</p>
+                </a>
+                
+                <a href="" class="music-box artist">
+                    <div class="music-img border" style="background-image: url(../../images/artist3.jpg);"></div>
+                    <p class="bold">Shayea</p>
+                    <p class="thin little">Artist</p>
+                </a>
+
+                <a href="" class="music-box artist">
+                    <div class="music-img border" style="background-image: url(../../images/artist4.jpg);"></div>
+                    <p class="bold">Sepehr Khalse</p>
+                    <p class="thin little">Artist</p>
+                </a>
+
+                <a href="" class="music-box artist">
+                    <div class="music-img border" style="background-image: url(../../images/artist5.jpg);"></div>
+                    <p class="bold">Behzad Leito</p>
+                    <p class="thin little">Artist</p>
+                </a>
+
+                <a href="" class="music-box artist">
+                    <div class="music-img border" style="background-image: url(../../images/artist6.jpg);"></div>
+                    <p class="bold">Ho3ein</p>
+                    <p class="thin little">Artist</p>
+                </a>
+
+                <a href="" class="music-box artist">
+                    <div class="music-img border" style="background-image: url(../../images/artist7.jpg);"></div>
+                    <p class="bold">Erfan</p>
+                    <p class="thin little">Artist</p>
+                </a>
+            </div>
+
+
+            <div class="row-top">
+                <p class="big2 bold2">Podcast</p>
+                <a href="">Show More</a>
+            </div>
+            <div class="row">
+                <a href="" class="music-box-long">
+                    <div class="music-img" style="background-image: url(../../images/podcast1.jpg);"></div>
+                    <p class="bold">Podcast 1</p>
+                    <p class="thin little">Podcast</p>
+                </a>
+
+                <a href="" class="music-box-long">
+                    <div class="music-img" style="background-image: url(../../images/podcast3.jpg);"></div>
+                    <p class="bold">Podcast 2</p>
+                    <p class="thin little">Podcast</p>
+                </a>
+
+                <a href="" class="music-box-long">
+                    <div class="music-img" style="background-image: url(../../images/podcast2.jpg);"></div>
+                    <p class="bold">Podcast 3</p>
+                    <p class="thin little">Podcast</p>
+                </a>
+
+                <a href="" class="music-box-long">
+                    <div class="music-img" style="background-image: url(../../images/podcast4.jpg);"></div>
+                    <p class="bold">Podcast 4</p>
+                    <p class="thin little">Podcast</p>
+                </a>
+
+                <a href="" class="music-box-long">
+                    <div class="music-img" style="background-image: url(../../images/podcast1.jpg);"></div>
+                    <p class="bold">Podcast 5</p>
+                    <p class="thin little">Podcast</p>
+                </a>
+            </div>
+
+
+            <div class="row-top">
+                <p class="big2 bold2">New Release</p>
+                <a href="">Show More</a>
+            </div>
+            <div class="row">
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img2.jpg);"></div>
+                    <p class="bold">Hate</p>
+                    <p class="thin little">Chrvsi</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img.jpg);"></div>
+                    <p class="bold">The End</p>
+                    <p class="thin little">021kid</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img5.jpg);"></div>
+                    <p class="bold">The Cold Room</p>
+                    <p class="thin little">021kid</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img3.jpg);"></div>
+                    <p class="bold">RunAway</p>
+                    <p class="thin little">Poobon</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img6.jpg);"></div>
+                    <p class="bold">Shootia</p>
+                    <p class="thin little">Poori</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img8.jpg);"></div>
+                    <p class="bold">Gizeh</p>
+                    <p class="thin little">Hipopologist</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img4.jpg);"></div>
+                    <p class="bold">52hz</p>
+                    <p class="thin little">Chrvsi</p>
+                </a>
+
+                <a href="" class="music-box">
+                    <div class="music-img" style="background-image: url(../../images/music-img7.jpg);"></div>
+                    <p class="bold">Nakhla</p>
+                    <p class="thin little">Hidden & Khalse</p>
+                </a>
+            </div>
+
+
+            <div class="row-top">
+                <p class="big2 bold2">Radio</p>
+                <a href="">Show More</a>
+            </div>
+            <div class="row">
+                <a href="" class="music-box radio">
+                    <div class="music-img" style="background-image: url(../../images/radio1.jpg);"></div>
+                    <p class="bold">Mehrad Hidden</p>
+                    <p class="thin little">Radio</p>
+                </a>
+
+                <a href="" class="music-box radio">
+                    <div class="music-img" style="background-image: url(../../images/radio2.jpg);"></div>
+                    <p class="bold">Poobon</p>
+                    <p class="thin little">Radio</p>
+                </a>
+
+                <a href="" class="music-box radio">
+                    <div class="music-img" style="background-image: url(../../images/radio5.jpg);"></div>
+                    <p class="bold">Saretan</p>
+                    <p class="thin little">Radio</p>
+                </a>
+
+                <a href="" class="music-box radio">
+                    <div class="music-img" style="background-image: url(../../images/radio3.jpg);"></div>
+                    <p class="bold">Shayea</p>
+                    <p class="thin little">Radio</p>
+                </a>
+
+                <a href="" class="music-box radio">
+                    <div class="music-img" style="background-image: url(../../images/radio6.jpg);"></div>
+                    <p class="bold">Sogand</p>
+                    <p class="thin little">Radio</p>
+                </a>
+
+                <a href="" class="music-box radio">
+                    <div class="music-img" style="background-image: url(../../images/radio7.jpg);"></div>
+                    <p class="bold">Kamyar</p>
+                    <p class="thin little">Radio</p>
+                </a>
+
+                <a href="" class="music-box radio">
+                    <div class="music-img" style="background-image: url(../../images/radio4.jpg);"></div>
+                    <p class="bold">Chrvsi</p>
+                    <p class="thin little">Radio</p>
+                </a>
+            </div>
+
+            <footer>
+                <div class="links">
+                    <a href="">About</a>
+                    <a href="">Support</a>
+                    <a href="">For Artists</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+                <div class="social-icons">
+                    <div class="social-icons-box">
+                        <p class="copyright">&copy; 2023 Parham Rz </p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="social-icons-box">
+                        <a href=""><i class='bx bxl-instagram'></i></a>
+                        <a href=""><i class='bx bxl-twitter' ></i></a>
+                        <a href=""><i class='bx bxl-facebook' ></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <div class="right-bottom">
+            <div class="right-bottom-box">
+                <div class="detail-box">
+                    <div class="music-img" style="background-image: url(./../../images/music-img.jpg);"></div>
+                    <div class="music-name">
+                        <p>Song Name</p>
+                        <p style="font-size: 1rem;">Artist Name</p>
+                    </div>
+                    <button class="like-btn" style="margin-left: 1rem;">
+                        <i class='bx bx-heart' id="like-not-fill"></i>
+                        <i class='bx bxs-heart' id="like-fill" style="display: none;"></i>
+                    </button>
+                    <button class="option-btn">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                </div>
+
+                <div class="mid-box">
+                    <div class="buttons-box">
+                        <button><i class='bx bx-shuffle'></i></button>
+                        <button><i class='bx bx-skip-previous' style="font-size: 3.2rem;"></i></button>
+                        <button class="play-btn">
+                            <i class='bx bx-play' id="played"></i>
+                            <i class='bx bx-pause' id="paused" style="display: none;margin-left: 0;"></i>
+                        </button>
+                        <button><i class='bx bx-skip-next'  style="font-size: 3.2rem;"></i></button>
+                        <button><i class='bx bx-revision'></i></button>
+                    </div>
+
+                    <div class="slider-box time-box" style="gap: .5rem;">
+                        <div class="time-slider-value">00:00</div>
+                        <div class="slider time-slider">
+                            <input type="range" min="0" max="100" value="0">
+                            <progress min="0" max="100" value="0"></progress>
+                        </div>
+                        <div class="slider-value-end" style="font-size: 1.2rem;">01:00</div>
+                    </div>
+                </div>
+
+                <div class="slider-box vol-box" style="gap: .2rem;">
+                    <button><i class='bx bxs-volume'></i></button>
+                    <div class="slider vol-slider">
+                        <input type="range" min="0" max="100" value="50">
+                        <progress min="0" max="100" value="50"></progress>
+                    </div>
+                    <div class="vol-slider-value">50</div>
+                </div>
+            </div>
+
+            <div class="right-bottom-box right-bottom-box2">
+                <div class="slider-box time-box time-box2" style="gap: .5rem;">
+                    <div class="time-slider-value2">00:00</div>
+                    <div class="slider time-slider2" style="width: 60%;">
+                        <input type="range" min="0" max="100" value="0" style="width: 100%;">
+                        <progress min="0" max="100" value="0" style="width: 100%;"></progress>
+                    </div>
+                    <div class="slider-value-end" style="font-size: 1.2rem;">01:00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="add-playlist" id="add-playlist">
+        <div class="playlist-title">
+            <p class="big bold">Add Playlist</p>
+            <button class="close-add-playlist"><i class='bx bx-x'></i></button>
+        </div>
+        <div class="playlist-name-box">
+            <input type="text" class="playlist-name" placeholder="Playlist Name">
+            <textarea name="des" id="" cols="30" rows="10" class="playlist-des" placeholder="Some Description About Playlist"></textarea>
+        </div>
+        <div class="playlist-buttons">
+            <button>Add Image</button>
+            <button>Submit</button>
+        </div>
+    </section>
+
+    <section class="wrapper playlist-wrapper" style="width: 15rem;">
+        <div class="content">
+            <ul class="menu">
+                <li class="item">
+                    <i class='bx bx-edit'></i>
+                    <span>Edit</span>
+                </li>
+                <li class="item share">
+                    <div>
+                        <i class='bx bx-share bx-flip-horizontal' ></i>
+                        <span>Share</span>
+                    </div>
+                    <i class='bx bx-right-arrow-alt' ></i>
+                    <ul class="share-menu">
+                        <li class="item">
+                            <i class='bx bxl-twitter' ></i>
+                            <span>Twitter</span>
+                        </li>
+                        <li class="item">
+                            <i class='bx bxl-instagram' ></i>
+                            <span>Instagram</span>
+                        </li>
+                        <li class="item">
+                            <i class='bx bxl-linkedin-square' ></i>
+                            <span>Linked in</span>
+                        </li>
+                        <li class="item">
+                            <i class='bx bxl-facebook-circle' ></i>
+                            <span>Facebook</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <i class='bx bx-trash' ></i>
+                    <span>Delete</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="wrapper music-wrapper">
+        <div class="content">
+            <ul class="menu">
+                <li class="item">
+                    <i class='bx bx-plus-circle' ></i>
+                    <span>Add To Playlist</span>
+                </li>
+                <li class="item">
+                    <i class='bx bx-heart' ></i>
+                    <span>Favorite</span>
+                </li>
+                <li class="item">
+                    <i class='bx bx-headphone' ></i>
+                    <span>Artist Page</span>
+                </li>
+                <li class="item share">
+                    <div>
+                        <i class='bx bx-share bx-flip-horizontal' ></i>
+                        <span>Share</span>
+                    </div>
+                    <i class='bx bx-right-arrow-alt' ></i>
+                    <ul class="share-menu">
+                        <li class="item">
+                            <i class='bx bxl-twitter' ></i>
+                            <span>Twitter</span>
+                        </li>
+                        <li class="item">
+                            <i class='bx bxl-instagram' ></i>
+                            <span>Instagram</span>
+                        </li>
+                        <li class="item">
+                            <i class='bx bxl-linkedin-square' ></i>
+                            <span>Linked in</span>
+                        </li>
+                        <li class="item">
+                            <i class='bx bxl-facebook-circle' ></i>
+                            <span>Facebook</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="wrapper video-wrapper" style="width: 16rem;">
+        <div class="content">
+            <ul class="menu">
+                <li class="item">
+                    <i class='bx bx-heart' ></i>
+                    <span>Favorite</span>
+                </li>
+                <li class="item">
+                    <i class='bx bx-headphone' ></i>
+                    <span>Artist Page</span>
+                </li>
+                <li class="item share">
+                    <div>
+                        <i class='bx bx-share bx-flip-horizontal' ></i>
+                        <span>Share</span>
+                    </div>
+                    <i class='bx bx-right-arrow-alt' ></i>
+                    <ul class="share-menu">
+                        <li class="item">
+                            <i class='bx bxl-twitter' ></i>
+                            <span>Twitter</span>
+                        </li>
+                        <li class="item">
+                            <i class='bx bxl-instagram' ></i>
+                            <span>Instagram</span>
+                        </li>
+                        <li class="item">
+                            <i class='bx bxl-linkedin-square' ></i>
+                            <span>Linked in</span>
+                        </li>
+                        <li class="item">
+                            <i class='bx bxl-facebook-circle' ></i>
+                            <span>Facebook</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="../../codes/jquery.js"></script>
+    <script src="../../codes/main script.js"></script>
+</body>
+</html>

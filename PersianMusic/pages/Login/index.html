@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../../style/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <section class="main-div">
+            <div class="left-side">
+                <img src="../../images/logo.png" alt="">
+                <h2>PersianMusic</h2>
+            </div>
+            <div class="right-side">
+                <h3>Welcome To PersianMusic</h3>
+                <div class="title">
+                    <img src="../../images/logo2.png" alt="">
+                    <p>Persian Music</p>
+                </div>
+                <div class="mode">
+                    <button class="signin-mode">SIGN IN</button>
+                    <button class="signup-mode">SIGN UP</button>
+                </div>
+                <form class="login-form">
+                    <input type="text" placeholder="Username / Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input style="display: none;" class="re-enter-pass" type="password" placeholder="Re-Enter Password" required>
+                    <div class="div-remember">
+                        <input type="checkbox">
+                        <p>Remember Me</p>
+                    </div>
+                    <button style="display: block;" class="signin-btn" type="submit">Sign in</button>
+                    <button style="display: none;margin-top: 3rem;" class="signup-btn" type="submit">Sign up</button>
+                    <p class="forget-pass">Forget Password ?</p>
+                </form>
+                <p class="or">OR</p>
+                <div class="social">
+                    <button style="background-color: red;border-color: red;"><i class='bx bxl-google'></i></button>
+                    <button><i class='bx bxl-facebook-circle'></i></button>
+                    <button style="background-color: rgb(90, 90, 90);border-color: rgb(90, 90, 90);"><i class='bx bxl-apple'></i></button>
+                </div>
+            </div>
+        </section>
+
+        <div class="loading-wave">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+        </div>
+    </main>
+
+    <script src="../../codes/jquery.js"></script>
+    <script src="../../codes/login.js"></script>
+</body>
+</html>
